@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catat Jajan 📝</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Catat Jajan Hari Ini 💸</h1>
+            <div class="total-display">
+                <h2>Total Pengeluaran:</h2>
+                <span id="total-pengeluaran">Rp 0</span>
+            </div>
+        </header>
+
+        <form id="form-pengeluaran">
+            <input type="text" id="nama-barang" placeholder="Nama barang (cth: Es Teh)" required>
+            <input type="number" id="harga-barang" placeholder="Harga" required>
+            <button type="submit">Tambah</button>
+        </form>
+
+        <div class="list-pengeluaran">
+            <h3>Daftar Pengeluaran:</h3>
+            <ul id="daftar-item">
+                </ul>
+        </div>
+        
+        <button id="tombol-reset">Reset Semua Catatan</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
